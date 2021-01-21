@@ -5,7 +5,7 @@ from datetime import datetime
 from discord.ext import commands
 import os
 
-token = "ODAxMzg4NDAzMDIyODg5MDIx.YAf9HA.tEdgdB1JscVZZoav1uyu-HeNJ1k"
+token = "ODAxMzg4NDAzMDIyODg5MDIx.YAf9HA.5u-3mWIOaK2HljEzdAZyck0oCrE"
 client = discord.Client()
 now = datetime.now()
 
