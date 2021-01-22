@@ -32,7 +32,7 @@ async def on_message(message):
             name="`인증`", value="서버에 들어올려면 해야하는 인증입니다.", inline=False)
         await channel.send(embed=helpembed)
     
-    if message.content == "!정보":
+    if message.content == "$정보":
         channel = message.channel
         await message.delete()
         embed_Information = discord.Embed(
