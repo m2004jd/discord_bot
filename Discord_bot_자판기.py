@@ -31,7 +31,23 @@ async def on_message(message):
         helpembed.add_field(
             name="`인증`", value="서버에 들어올려면 해야하는 인증입니다.", inline=False)
         await channel.send(embed=helpembed)
-
+    
+    if message.content == "!정보":
+        channel = message.channel
+        await message.delete()
+        embed_Information = discord.Embed(
+            title=message.author.nick + " 정보", description=" ", color=0x050505)
+        embed_Information.set_thumbnail(url=message.author.avatar_url)
+        embed_Information.add_field(
+            name="`Server Name`", value=message.author.nick, inline=False)
+        embed_Information.add_field(
+            name="`Name`", value=message.author, inline=False)
+        embed_Information.add_field(
+            name="`ID`", value=message.author.id, inline=False)
+        embed_Information.add_field(
+            name="`Server Join Date`", value=str((message.author.joined_at).year) + "." + str((message.author.joined_at).month) + "." + str((message.author.joined_at).day), inline=False)
+        await channel.send(embed=embed_Information)
+    
     if message.content == "$인증":
         Verification_code = str(random.randint(100000, 999999))
         await message.delete()
