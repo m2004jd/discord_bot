@@ -38,7 +38,7 @@ async def on_message(message):
         channel = message.channel
         await message.delete()
         helpembed = discord.Embed(
-            title="도움말", description="```접두사는 {prefix} 입니다.```", color=0xfafafa)
+            title="도움말", description=f"```접두사는 {prefix} 입니다.```", color=0xfafafa)
         helpembed.add_field(
             name="`인증`", value="서버에 들어올려면 해야하는 인증입니다.", inline=False)
         helpembed.add_field(
