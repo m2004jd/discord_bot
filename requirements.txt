@@ -1,16 +1,6 @@
 discord.py
 asyncio
 datetime
-urllib
-URLError
-HTTPError
-urlopen
-urllib.request 
 Request
 bs4
-BeautifulSoup
-urllib.parse
-quote
-re
-warnings
 requests
