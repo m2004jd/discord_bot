@@ -16,7 +16,7 @@ import warnings
 import requests
 import time
 
-token = "ODAxMzg4NDAzMDIyODg5MDIx.YAf9HA.iO6lAmh8P6reI0ueu6uXdb4skm0"
+token = "ODAyNDEwMjAyMDU3NDA4NTQz.YAu0vA.HK5ApHaNvuH1DrlpM9MlL4cpEHU"
 client = discord.Client()
 now = datetime.now()
 prefix = "$"
@@ -128,6 +128,8 @@ async def on_message(message):
 
         totalPeopletoInt = statNum[0].split(')')[-1].split(',')
         tpInt = ''.join(totalPeopletoInt)
+        D_C19 = statNum[3].replace(",", "")
+        lethatRate = round((int(D_C19) / int(tpInt)) * 100, 2)
         Covid_19_embed = discord.Embed(
             title="Covid-19 Virus Korea Status", color=0xfafafa)
         Covid_19_embed.add_field(name="Data source : Ministry of Health and Welfare of Korea",
@@ -137,11 +139,19 @@ async def on_message(message):
         Covid_19_embed.add_field(
             name="`누적확진률`", value=statNum[6], inline=True)
         Covid_19_embed.add_field(
+            name="᲼", value="᲼", inline=True)
+        Covid_19_embed.add_field(
             name="`완치환자(격리해제)`", value=statNum[1] + "(" + beforeNum[1] + ")", inline=True)
         Covid_19_embed.add_field(
             name="`치료중(격리 중)`", value=statNum[2] + "(" + beforeNum[2] + ")", inline=True)
         Covid_19_embed.add_field(
+            name="᲼", value="᲼", inline=True)
+        Covid_19_embed.add_field(
             name="`사망`", value=statNum[3] + "(" + beforeNum[3] + ")", inline=True)
+        Covid_19_embed.add_field(name="`치명률`", value=str(
+            lethatRate) + " %", inline=True)
+        Covid_19_embed.add_field(
+            name="᲼", value="᲼", inline=True)
         Covid_19_embed.add_field(name="`최신 브리핑`\n" +
                                  briefTasks[0][0], value=f"[링크]({briefTasks[0][1]})", inline=False)
         Covid_19_embed.add_field(name="`최신 브리핑`\n" +
