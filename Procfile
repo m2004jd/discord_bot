@@ -1,1 +1,1 @@
-woker: python Discord_bot_자판기.py
+woker: python Discord_bot_D.py
