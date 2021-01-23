@@ -1,10 +1,6 @@
 discord.py
 asyncio
 datetime
-random
-discord.ext
-commands
-os
 urllib
 URLError
 HTTPError
@@ -18,4 +14,3 @@ quote
 re
 warnings
 requests
-time
