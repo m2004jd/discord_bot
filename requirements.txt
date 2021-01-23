@@ -1,17 +1,1 @@
-import discord
-import random
-import asyncio
-from datetime import datetime
-from discord.ext import commands
-import os
-import urllib
-from urllib.request import URLError
-from urllib.request import HTTPError
-from urllib.request import urlopen
-from urllib.request import Request, urlopen
-from bs4 import BeautifulSoup
-from urllib.parse import quote
-import re  # Regex for youtube link
-import warnings
-import requests
-import time
+
