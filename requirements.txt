@@ -1,6 +1,5 @@
 discord.py
 asyncio
 datetime
-Request
 bs4
 requests
