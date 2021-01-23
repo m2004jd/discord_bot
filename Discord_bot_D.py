@@ -16,7 +16,7 @@ import warnings
 import requests
 import time
 
-token = "ODAyNDEwMjAyMDU3NDA4NTQz.YAu0vA.HK5ApHaNvuH1DrlpM9MlL4cpEHU"
+token = "ODAxMzg4NDAzMDIyODg5MDIx.YAf9HA.iO6lAmh8P6reI0ueu6uXdb4skm0"
 client = discord.Client()
 now = datetime.now()
 prefix = "$"
