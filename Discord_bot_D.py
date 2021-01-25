@@ -245,6 +245,7 @@ async def on_message(message):
         await message.channel.send(embed=Server_embed)
 
     if message.content.startswith(f"{prefix}롤전적"):
+        await message.delete()
         try:
             if len(message.content.split(" ")) == 1:
                 embed = discord.Embed(
