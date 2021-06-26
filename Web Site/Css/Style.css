@@ -1,0 +1,45 @@
+html,body {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    src : url("../Fonts/GothicA1-Bold.ttf");
+    font-family: "gothic-b"
+}
+@font-face {
+    src : url("../Fonts/NotoSansKR-Black.otf");
+    font-family: "notosans-black"
+}
+@font-face {
+    src : url("../Fonts/NotoSansKR-Light.otf");
+    font-family: "notosans-light"
+}
+@font-face {
+    src : url("../Fonts/RixYeoljeongdo\ Regular.ttf");
+    font-family: "rix-r"
+}
+@font-face {
+    src : url("../Fonts/NotoSansKR-Bold.otf");
+    font-family: "notosans-bold"
+}
+
+.rix-r {
+    font-family: "rix-r"
+}
+
+.notosans-light {
+    font-family: "notosans-light"
+}
+
+.notosans-black {
+    font-family: "notosans-black"
+}
+
+.notosans-bold {
+    font-family: "notosans-bold"
+}
+
+.gothic-b {
+    font-family: "gothic-b"
+}
