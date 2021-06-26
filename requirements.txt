@@ -1,5 +1,0 @@
-discord.py
-asyncio
-datetime
-bs4
-requests
